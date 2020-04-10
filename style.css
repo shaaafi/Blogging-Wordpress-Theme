@@ -1,8 +1,25 @@
 body {
     margin:0;
-    padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
+
+
+#banner {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background-image: url('./images/landing-image.jpg');
+    background-color: rgba(255, 0, 0 , .2);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+
+/*
 nav{
     height: 70px;
 }
@@ -37,5 +54,6 @@ nav#menu div a {
     width: 100%;
 
 }
+*/
 
 
