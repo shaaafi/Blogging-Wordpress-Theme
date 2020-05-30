@@ -164,9 +164,42 @@ nav ul {
 }
 
 #slideout-menu {
-    display:none;
+    position: fixed;
+    z-index: 100;
+    margin-top: 72px;
+    padding: 0 32px;
+    width: 100%;
+    transition: 0.4s;
+    text-align: center;
+    background-color: rgb(97, 65, 65);
+}
+/*
+#slideout-menu {
+    display: none;
+    //position: fixed;
+    z-index: 100;
+    margin-top: 20px;
+    padding: 0 32px;
+    width: 100%;
+    transition: 0.4s;
+    text-align: center;
+    background-color: black;
 }
 
+#slideout-menu ul {
+    list-style: none;
+    padding: 2px;
+}
+
+#slideout-menu ul li {
+    padding: 10px;
+}
+
+#slideout-menu ul li a {
+    color: white;
+}
+
+*/
 section {
     display: flex;
     flex-wrap: wrap;
@@ -291,7 +324,22 @@ footer #right-footer ul li .fa-github:hover {
 }
 
 @media (max-width:900px) {
-    
+    nav ul {
+        display: none;
+    }
+
+    nav #menu-icon {
+        display: flex;
+    }
+
+    #searchbox {
+        display: none;
+    }
+
+    #slideout-menu {
+        display: block;
+    }
+
 }
 
 @media (min-width: 720px) {
